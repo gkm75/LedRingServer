@@ -3,6 +3,11 @@
 BuiltinLed::BuiltinLed()
 {}
  
+void BuiltinLed::begin()
+{
+    pinMode(LED_BUILTIN, OUTPUT);
+}
+
 void BuiltinLed::on()
 {
     digitalWrite(LED_BUILTIN, HIGH);

@@ -7,6 +7,7 @@ class BuiltinLed
 {
     public:
         BuiltinLed();
+        void begin();
         void on();
         void off();
         void on(int millis);

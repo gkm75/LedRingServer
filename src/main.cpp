@@ -1,9 +1,13 @@
 #include <Arduino.h>
+#include <builtin_led.h>
+
+BuiltinLed biLed;
 
 void setup() {
-  // put your setup code here, to run once:
+  biLed.begin();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  biLed.on(1000);
+  biLed.off(1000);
 }
